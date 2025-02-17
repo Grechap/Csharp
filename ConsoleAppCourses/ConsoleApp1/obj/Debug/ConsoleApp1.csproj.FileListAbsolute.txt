@@ -5,3 +5,7 @@ C:\Users\ito17\source\repos\Csharp\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1
 C:\Users\ito17\source\repos\Csharp\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.csproj.CoreCompileInputs.cache
 C:\Users\ito17\source\repos\Csharp\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.exe
 C:\Users\ito17\source\repos\Csharp\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.pdb
+D:\бргушные штуки\академия\c#\Csharp\ConsoleAppCourses\ConsoleApp1\obj\Debug\ConsoleApp1.csproj.AssemblyReference.cache
+D:\бргушные штуки\академия\c#\Csharp\ConsoleAppCourses\ConsoleApp1\obj\Debug\ConsoleApp1.csproj.CoreCompileInputs.cache
+D:\бргушные штуки\академия\c#\Csharp\ConsoleAppCourses\ConsoleApp1\obj\Debug\ConsoleApp1.exe
+D:\бргушные штуки\академия\c#\Csharp\ConsoleAppCourses\ConsoleApp1\obj\Debug\ConsoleApp1.pdb

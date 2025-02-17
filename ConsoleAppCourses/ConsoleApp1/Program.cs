@@ -1,33 +1,82 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Xml.Schema;
+
+/* Лабораторная работа 3: Написание кода для приложения Grades Prototype
+
+1.  Реализация структур и перечислений:
+·  Создать структуру Grade, которая будет содержать поля: 
+·  Subject (предмет)
+·  Score (оценка)
+·  Date (дата).
+·  Создать перечисление Subject, которое будет содержать список предметов (например, Math, Physics, Chemistry).
+1.  Организация данных в коллекции:
+·  Использовать коллекцию List<Grade> для хранения оценок студента.
+·  Реализовать методы для добавления, удаления и поиска оценок по предмету. */
+
+public enum Subject
+{
+    Math,
+    Physics,
+    Chemistry,
+}
+
+public struct Grade //Subject Score Date
+{
+    public Subject Subject { get; set; }
+    public int Score { get; set; }
+    public DateTime Date { get; set; }
+
+    public Grade(Subject subject, int score, DateTime date)
+    {
+        Subject = subject;
+        Score = score;
+        Date = date;
+    }
+}
 
 class Student
 {
-    public int id_student { get; set; } 
-    public string name { get; set; }
+    public int Id { get; set; }
+    public string Name { get; set; }
+    public List<Grade> Grades { get; set; }
 
-    public Student(int id_student, string name)
+    public Student(int id, string name)
     {
-        this.id_student = id_student;
-        this.name = name;
+        Id = id;
+        Name = name;
+        Grades = new List<Grade>();
     }
 
 
+    public void AddGrade(Subject subject, int score, DateTime date)  // Метод для добавления оценки
+    {
+        Grades.Add(new Grade(subject, score, date));
+    }
 }
-class Course
-    {
-    public int id_course { get; set; }
-    public string name { get; set; }
-    public int students_count { get; set; }
-    public List<Student> students { get; set; }
 
-    public Course(int id_course, string name, int students_count, List<Student> students)
+
+public List<Grade> FindGradesBySubject(Subject subject)    // Метод для поиска оценок по предмету
+{
+    return Grades.Where(g => g.Subject == subject).ToList();
+}
+}
+
+
+class Course
+{
+    public int Id { get; set; }
+    public string Name { get; set; }
+    public int Capacity { get; set; }
+    public List<Student> Students { get; set; }
+
+    public Course(int id, string name, int capacity)
     {
-        this.id_course = id_course;
-        this.name = name;
-        this.students_count = students_count;
-        this.students = students;
+        Id = id;
+        Name = name;
+        Capacity = capacity;
+        Students = new List<Student>();
     }
 }
 
@@ -46,7 +95,10 @@ class Program
             Console.WriteLine("4. Показать список студентов на курсе");
             Console.WriteLine("5. Удалить студента из курса");
             Console.WriteLine("6. Удалить курс");
-            Console.WriteLine("7. Выход");
+            Console.WriteLine("7. Поставить оценку");
+            Console.WriteLine("8. Удалить оценку");
+            Console.WriteLine("9. Показать оценки студента по предмету");
+            Console.WriteLine("10. Выход");
             Console.Write("Выберите действие: ");
 
             string choice = Console.ReadLine();
@@ -56,7 +108,7 @@ class Program
                 case "1":
                     AddCourse();
                     break;
-                 case "2":
+                case "2":
                     ViewCourse();
                     break;
                 case "3":
@@ -72,65 +124,78 @@ class Program
                     DeleteCourse();
                     break;
                 case "7":
+                    AddGrade();
+                    break;
+                case "8":
+                    RemoveGrade();
+                    break;
+                case "9":
+                    ViewGradesBySubject();
+                    break;
+                case "10":
                     return;
                 default:
                     Console.WriteLine("Неверный выбор, попробуйте снова");
                     break;
-                /* case "8":
-                    AddCourse();
-                    break;*/ 
-
             }
         }
     }
+
     static void AddCourse()
-    {   
-        Console.Write("Введите индентификатор курса: ");
-        int id_course = int.Parse(Console.ReadLine());
+    {
+        Console.Write("Введите идентификатор курса: ");
+        int id = int.Parse(Console.ReadLine());
         Console.Write("Введите название курса: ");
         string name = Console.ReadLine();
         Console.Write("Введите вместимость курса: ");
-        int students_count = int.Parse(Console.ReadLine());
-        courses.Add(new Course(id_course, name, students_count, students));
-        Console.WriteLine("КУрс успешно добавлен. \n");
-
+        int capacity = int.Parse(Console.ReadLine());
+        courses.Add(new Course(id, name, capacity));
+        Console.WriteLine("Курс успешно добавлен.\n");
     }
 
     static void ViewCourse()
     {
         Console.Write("Введите идентификатор курса: ");
-        int id_course = int.Parse(Console.ReadLine());
-        Course course = courses.Find(c => c.id_course == id_course);
+        int id = int.Parse(Console.ReadLine());
+        Course course = courses.Find(c => c.Id == id);
         if (course != null)
         {
-            Console.WriteLine($"\nНаименование курса: '{course.name}', \nВместимость: {course.students_count}");
+            Console.WriteLine($"\nНаименование курса: '{course.Name}', \nВместимость: {course.Capacity}");
         }
         else
         {
             Console.WriteLine("Курс не найден");
         }
     }
+
     static void AddStudent()
     {
         Console.Write("Введите идентификатор курса: ");
-        int id_course = int.Parse(Console.ReadLine());
-        Course course = courses.Find(c => c.id_course == id_course);
+        int courseId = int.Parse(Console.ReadLine());
+        Course course = courses.Find(c => c.Id == courseId);
         if (course != null)
         {
-            if (course.students.Count < course.students_count)
-            { 
+            if (course.Students.Count < course.Capacity)
+            {
                 Console.Write("Введите идентификатор студента: ");
-                int id_student = int.Parse(Console.ReadLine());
+                int studentId = int.Parse(Console.ReadLine());
                 Console.Write("Введите имя студента: ");
                 string name = Console.ReadLine();
-                Student student = students.FirstOrDefault(s => s.id_student == id_student); //LINQ, который возвращает первый элемент последовательности поуказанному условию, или значение по умолчанию.
+                Student student = students.FirstOrDefault(s => s.Id == studentId);
                 if (student == null)
                 {
-                student = new Student(id_student, name);
-                students.Add(student);
+                    student = new Student(studentId, name);
+                    students.Add(student);
                 }
-                course.students.Add(student);
-                Console.WriteLine("Студент успешно зачислен на курс\n"); // студенты дублируются в список =(
+                if (!course.Students.Contains(student))
+                {
+                    course.Students.Add(student);
+                    Console.WriteLine("Студент успешно зачислен на курс\n");
+                }
+                else
+                {
+                    Console.WriteLine("Студент уже зачислен на этот курс\n");
+                }
             }
             else
             {
@@ -147,13 +212,13 @@ class Program
     {
         Console.Write("Введите идентификатор курса: ");
         int courseId = int.Parse(Console.ReadLine());
-        Course course = courses.Find(c => c.id_course == courseId);
+        Course course = courses.Find(c => c.Id == courseId);
         if (course != null)
         {
             Console.WriteLine("Список студентов:");
-            foreach (var student in course.students)
+            foreach (var student in course.Students)
             {
-                Console.WriteLine($"ID: {student.id_student}, Имя: {student.name}\n");
+                Console.WriteLine($"ID: {student.Id}, Имя: {student.Name}\n");
             }
         }
         else
@@ -166,15 +231,15 @@ class Program
     {
         Console.Write("Введите идентификатор курса: ");
         int courseId = int.Parse(Console.ReadLine());
-        Course course = courses.Find(c => c.id_course == courseId);
+        Course course = courses.Find(c => c.Id == courseId);
         if (course != null)
         {
             Console.Write("Введите идентификатор студента: ");
             int studentId = int.Parse(Console.ReadLine());
-            Student student = course.students.FirstOrDefault(s => s.id_student == studentId);
+            Student student = course.Students.FirstOrDefault(s => s.Id == studentId);
             if (student != null)
             {
-                course.students.Remove(student);
+                course.Students.Remove(student);
                 Console.WriteLine("Студент удален из курса.\n");
             }
             else
@@ -192,7 +257,7 @@ class Program
     {
         Console.Write("Введите идентификатор курса: ");
         int courseId = int.Parse(Console.ReadLine());
-        Course course = courses.Find(c => c.id_course == courseId);
+        Course course = courses.Find(c => c.Id == courseId);
         if (course != null)
         {
             courses.Remove(course);
@@ -201,6 +266,102 @@ class Program
         else
         {
             Console.WriteLine("Курс не найден\n");
+        }
+    }
+
+    static void AddGrade()
+    {
+        Console.Write("Введите идентификатор студента: ");
+        int studentId = int.Parse(Console.ReadLine());
+        Student student = students.FirstOrDefault(s => s.Id == studentId);
+        if (student != null)
+        {
+            Console.Write("Введите предмет (Math, Physics, Chemistry, Biology, History, Literature): ");
+            string subjectInput = Console.ReadLine();
+            if (Enum.TryParse(subjectInput, out Subject subject))
+            {
+                Console.Write("Введите оценку: ");
+                int score = int.Parse(Console.ReadLine());
+                Console.Write("Введите дату (YYYY-MM-DD): ");
+                DateTime date = DateTime.Parse(Console.ReadLine());
+                student.AddGrade(subject, score, date);
+                Console.WriteLine("Оценка успешно добавлена.\n");
+            }
+            else
+            {
+                Console.WriteLine("Неверный предмет.\n");
+            }
+        }
+        else
+        {
+            Console.WriteLine("Студент не найден.\n");
+        }
+    }
+
+    static void RemoveGrade()
+    {
+        Console.Write("Введите идентификатор студента: ");
+        int studentId = int.Parse(Console.ReadLine());
+        Student student = students.FirstOrDefault(s => s.Id == studentId);
+        if (student != null)
+        {
+            Console.Write("Введите предмет (Math, Physics, Chemistry, Biology, History, Literature): ");
+            string subjectInput = Console.ReadLine();
+            if (Enum.TryParse(subjectInput, out Subject subject))
+            {
+                if (student.RemoveGrade(subject))
+                {
+                    Console.WriteLine("Оценка успешно удалена.\n");
+                }
+                else
+                {
+                    Console.WriteLine("Оценка не найдена.\n");
+                }
+            }
+            else
+            {
+                Console.WriteLine("Неверный предмет.\n");
+            }
+        }
+        else
+        {
+            Console.WriteLine("Студент не найден.\n");
+        }
+    }
+
+    static void ViewGradesBySubject()
+    {
+        Console.Write("Введите идентификатор студента: ");
+        int studentId = int.Parse(Console.ReadLine());
+        Student student = students.FirstOrDefault(s => s.Id == studentId);
+        if (student != null)
+        {
+            Console.Write("Введите предмет (Math, Physics, Chemistry, Biology, History, Literature): ");
+            string subjectInput = Console.ReadLine();
+            if (Enum.TryParse(subjectInput, out Subject subject))
+            {
+                List<Grade> grades = student.FindGradesBySubject(subject);
+                if (grades.Any())
+                {
+                    Console.WriteLine("Оценки студента по предмету:");
+                    foreach (var grade in grades)
+                    {
+                        Console.WriteLine($"Предмет: {grade.Subject}, Оценка: {grade.Score}, Дата: {grade.Date.ToShortDateString()}\n");
+                    }
+                }
+                else
+                {
+                    Console.WriteLine("Оценки не найдены.\n");
+                }
+            }
+            else
+            {
+                Console.WriteLine("Неверный предмет.\n");
+            }
+        }
+        else
+        {
+            Console.WriteLine("Студент не найден.\n");
         }
     }
 }
