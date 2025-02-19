@@ -1,0 +1,14 @@
+D:\бргушные штуки\академия\csharpproba\ConsoleApp1\ConsoleApp1\obj\Debug\net9.0\ConsoleApp1.GeneratedMSBuildEditorConfig.editorconfig
+D:\бргушные штуки\академия\csharpproba\ConsoleApp1\ConsoleApp1\obj\Debug\net9.0\ConsoleApp1.AssemblyInfoInputs.cache
+D:\бргушные штуки\академия\csharpproba\ConsoleApp1\ConsoleApp1\obj\Debug\net9.0\ConsoleApp1.AssemblyInfo.cs
+D:\бргушные штуки\академия\csharpproba\ConsoleApp1\ConsoleApp1\obj\Debug\net9.0\ConsoleApp1.csproj.CoreCompileInputs.cache
+D:\бргушные штуки\академия\csharpproba\ConsoleApp1\ConsoleApp1\bin\Debug\net9.0\ConsoleApp1.exe
+D:\бргушные штуки\академия\csharpproba\ConsoleApp1\ConsoleApp1\bin\Debug\net9.0\ConsoleApp1.deps.json
+D:\бргушные штуки\академия\csharpproba\ConsoleApp1\ConsoleApp1\bin\Debug\net9.0\ConsoleApp1.runtimeconfig.json
+D:\бргушные штуки\академия\csharpproba\ConsoleApp1\ConsoleApp1\bin\Debug\net9.0\ConsoleApp1.dll
+D:\бргушные штуки\академия\csharpproba\ConsoleApp1\ConsoleApp1\bin\Debug\net9.0\ConsoleApp1.pdb
+D:\бргушные штуки\академия\csharpproba\ConsoleApp1\ConsoleApp1\obj\Debug\net9.0\ConsoleApp1.dll
+D:\бргушные штуки\академия\csharpproba\ConsoleApp1\ConsoleApp1\obj\Debug\net9.0\refint\ConsoleApp1.dll
+D:\бргушные штуки\академия\csharpproba\ConsoleApp1\ConsoleApp1\obj\Debug\net9.0\ConsoleApp1.pdb
+D:\бргушные штуки\академия\csharpproba\ConsoleApp1\ConsoleApp1\obj\Debug\net9.0\ConsoleApp1.genruntimeconfig.cache
+D:\бргушные штуки\академия\csharpproba\ConsoleApp1\ConsoleApp1\obj\Debug\net9.0\ref\ConsoleApp1.dll
