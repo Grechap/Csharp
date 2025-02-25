@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "sYSaTRnqwK9NTZpJRy2c8xRZNal21JEpc3dGTjEKt9U=",
+  "Source": "APIwithDB",
+  "BasePath": "_content/APIwithDB",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

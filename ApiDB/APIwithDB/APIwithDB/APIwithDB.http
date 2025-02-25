@@ -1,0 +1,11 @@
+@APIwithDB_HostAddress = http://localhost:3000
+
+### Получение всех студентов
+GET {{APIwithDB_HostAddress}}/api/students
+Accept: application/json
+
+### Получение студента по имени
+GET {{APIwithDB_HostAddress}}/api/students/{name}
+Accept: application/json
+
+###

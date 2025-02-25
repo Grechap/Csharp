@@ -1,0 +1,125 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\\u0431\u0440\u0433\u0443\u0448\u043D\u044B\u0435 \u0448\u0442\u0443\u043A\u0438\\\u0430\u043A\u0430\u0434\u0435\u043C\u0438\u044F\\c#\\ApiDB\\APIwithDB\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5A301392-138D-4180-B03C-67063619A72B}|APIwithDB\\APIwithDB.csproj|d:\\\u0431\u0440\u0433\u0443\u0448\u043D\u044B\u0435 \u0448\u0442\u0443\u043A\u0438\\\u0430\u043A\u0430\u0434\u0435\u043C\u0438\u044F\\c#\\apidb\\apiwithdb\\apiwithdb\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A301392-138D-4180-B03C-67063619A72B}|APIwithDB\\APIwithDB.csproj|solutionrelative:apiwithdb\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A301392-138D-4180-B03C-67063619A72B}|APIwithDB\\APIwithDB.csproj|d:\\\u0431\u0440\u0433\u0443\u0448\u043D\u044B\u0435 \u0448\u0442\u0443\u043A\u0438\\\u0430\u043A\u0430\u0434\u0435\u043C\u0438\u044F\\c#\\apidb\\apiwithdb\\apiwithdb\\dbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A301392-138D-4180-B03C-67063619A72B}|APIwithDB\\APIwithDB.csproj|solutionrelative:apiwithdb\\dbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A301392-138D-4180-B03C-67063619A72B}|APIwithDB\\APIwithDB.csproj|d:\\\u0431\u0440\u0433\u0443\u0448\u043D\u044B\u0435 \u0448\u0442\u0443\u043A\u0438\\\u0430\u043A\u0430\u0434\u0435\u043C\u0438\u044F\\c#\\apidb\\apiwithdb\\apiwithdb\\apiwithdb.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{5A301392-138D-4180-B03C-67063619A72B}|APIwithDB\\APIwithDB.csproj|solutionrelative:apiwithdb\\apiwithdb.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A301392-138D-4180-B03C-67063619A72B}|APIwithDB\\APIwithDB.csproj|d:\\\u0431\u0440\u0433\u0443\u0448\u043D\u044B\u0435 \u0448\u0442\u0443\u043A\u0438\\\u0430\u043A\u0430\u0434\u0435\u043C\u0438\u044F\\c#\\apidb\\apiwithdb\\apiwithdb\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A301392-138D-4180-B03C-67063619A72B}|APIwithDB\\APIwithDB.csproj|solutionrelative:apiwithdb\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A301392-138D-4180-B03C-67063619A72B}|APIwithDB\\APIwithDB.csproj|d:\\\u0431\u0440\u0433\u0443\u0448\u043D\u044B\u0435 \u0448\u0442\u0443\u043A\u0438\\\u0430\u043A\u0430\u0434\u0435\u043C\u0438\u044F\\c#\\apidb\\apiwithdb\\apiwithdb\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{5A301392-138D-4180-B03C-67063619A72B}|APIwithDB\\APIwithDB.csproj|solutionrelative:apiwithdb\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\\u0431\u0440\u0433\u0443\u0448\u043D\u044B\u0435 \u0448\u0442\u0443\u043A\u0438\\\u0430\u043A\u0430\u0434\u0435\u043C\u0438\u044F\\csharpproba\\ApiProba\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "APIwithDB.http",
+              "DocumentMoniker": "D:\\\u0431\u0440\u0433\u0443\u0448\u043D\u044B\u0435 \u0448\u0442\u0443\u043A\u0438\\\u0430\u043A\u0430\u0434\u0435\u043C\u0438\u044F\\c#\\ApiDB\\APIwithDB\\APIwithDB\\APIwithDB.http",
+              "RelativeDocumentMoniker": "APIwithDB\\APIwithDB.http",
+              "ToolTip": "D:\\\u0431\u0440\u0433\u0443\u0448\u043D\u044B\u0435 \u0448\u0442\u0443\u043A\u0438\\\u0430\u043A\u0430\u0434\u0435\u043C\u0438\u044F\\c#\\ApiDB\\APIwithDB\\APIwithDB\\APIwithDB.http",
+              "RelativeToolTip": "APIwithDB\\APIwithDB.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2025-02-25T08:24:47.848Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\\u0431\u0440\u0433\u0443\u0448\u043D\u044B\u0435 \u0448\u0442\u0443\u043A\u0438\\\u0430\u043A\u0430\u0434\u0435\u043C\u0438\u044F\\c#\\ApiDB\\APIwithDB\\APIwithDB\\Program.cs",
+              "RelativeDocumentMoniker": "APIwithDB\\Program.cs",
+              "ToolTip": "D:\\\u0431\u0440\u0433\u0443\u0448\u043D\u044B\u0435 \u0448\u0442\u0443\u043A\u0438\\\u0430\u043A\u0430\u0434\u0435\u043C\u0438\u044F\\c#\\ApiDB\\APIwithDB\\APIwithDB\\Program.cs",
+              "RelativeToolTip": "APIwithDB\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAABNAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-25T07:38:23.811Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "StudentController.cs",
+              "DocumentMoniker": "D:\\\u0431\u0440\u0433\u0443\u0448\u043D\u044B\u0435 \u0448\u0442\u0443\u043A\u0438\\\u0430\u043A\u0430\u0434\u0435\u043C\u0438\u044F\\c#\\ApiDB\\APIwithDB\\APIwithDB\\Controllers\\StudentController.cs",
+              "RelativeDocumentMoniker": "APIwithDB\\Controllers\\StudentController.cs",
+              "ToolTip": "D:\\\u0431\u0440\u0433\u0443\u0448\u043D\u044B\u0435 \u0448\u0442\u0443\u043A\u0438\\\u0430\u043A\u0430\u0434\u0435\u043C\u0438\u044F\\c#\\ApiDB\\APIwithDB\\APIwithDB\\Controllers\\StudentController.cs",
+              "RelativeToolTip": "APIwithDB\\Controllers\\StudentController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-25T08:26:21.787Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DBContext.cs",
+              "DocumentMoniker": "D:\\\u0431\u0440\u0433\u0443\u0448\u043D\u044B\u0435 \u0448\u0442\u0443\u043A\u0438\\\u0430\u043A\u0430\u0434\u0435\u043C\u0438\u044F\\c#\\ApiDB\\APIwithDB\\APIwithDB\\DBContext.cs",
+              "RelativeDocumentMoniker": "APIwithDB\\DBContext.cs",
+              "ToolTip": "D:\\\u0431\u0440\u0433\u0443\u0448\u043D\u044B\u0435 \u0448\u0442\u0443\u043A\u0438\\\u0430\u043A\u0430\u0434\u0435\u043C\u0438\u044F\\c#\\ApiDB\\APIwithDB\\APIwithDB\\DBContext.cs",
+              "RelativeToolTip": "APIwithDB\\DBContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-25T07:59:31.706Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\\u0431\u0440\u0433\u0443\u0448\u043D\u044B\u0435 \u0448\u0442\u0443\u043A\u0438\\\u0430\u043A\u0430\u0434\u0435\u043C\u0438\u044F\\c#\\ApiDB\\APIwithDB\\APIwithDB\\appsettings.json",
+              "RelativeDocumentMoniker": "APIwithDB\\appsettings.json",
+              "ToolTip": "D:\\\u0431\u0440\u0433\u0443\u0448\u043D\u044B\u0435 \u0448\u0442\u0443\u043A\u0438\\\u0430\u043A\u0430\u0434\u0435\u043C\u0438\u044F\\c#\\ApiDB\\APIwithDB\\APIwithDB\\appsettings.json",
+              "RelativeToolTip": "APIwithDB\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-02-25T07:55:27.711Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\\u0431\u0440\u0433\u0443\u0448\u043D\u044B\u0435 \u0448\u0442\u0443\u043A\u0438\\\u0430\u043A\u0430\u0434\u0435\u043C\u0438\u044F\\csharpproba\\ApiProba\\Program.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\csharpproba\\ApiProba\\Program.cs",
+              "ToolTip": "D:\\\u0431\u0440\u0433\u0443\u0448\u043D\u044B\u0435 \u0448\u0442\u0443\u043A\u0438\\\u0430\u043A\u0430\u0434\u0435\u043C\u0438\u044F\\csharpproba\\ApiProba\\Program.cs",
+              "RelativeToolTip": "..\\..\\..\\csharpproba\\ApiProba\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-25T07:43:15.688Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
